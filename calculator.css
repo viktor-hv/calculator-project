@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(71, 143, 71, 0.7);
+}
+
+#main-container {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  height: 300px;
+  width: 600px;
+}
+#main-display {
+  display: flex;
+  flex-direction: column;
+  background-color: ghostwhite;
+}
+.input-display,
+.result-display {
+  flex-grow: 1;
+}
+
+.komandi {
+  display: flex;
+  flex-direction: row;
+  background-color: gray;
+}
+#numbers-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-grow: 2;
+}
+#numbers-buttons > button {
+  background-color: gray;
+  color: honeydew;
+  border: none;
+}
+#basic-operations {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+#basic-operations > button {
+  color: honeydew;
+  background-color: darkgrey;
+  border: none;
+}
+
+#other-functions {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  flex: 1;
+}
+#other-functions > button {
+  color: rgb(44, 44, 44);
+  background-color: rgb(133, 217, 209);
+  border: none;
+}
+#numbers-buttons > button:hover {
+  color: rgb(6, 6, 6);
+  background-color: honeydew;
+  cursor: pointer;
+}
+#basic-operations > button:hover {
+  color: rgb(6, 6, 6);
+  background-color: honeydew;
+  cursor: pointer;
+}
+#other-functions > button:hover {
+  color: rgb(6, 6, 6);
+  background-color: honeydew;
+  cursor: pointer;
+}
+.input-display {
+  border: none;
+  padding: 10px;
+  text-align: end;
+  font-size: 2rem;
+  color: darkslategrey;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
